@@ -27,7 +27,7 @@
     </div>
     <div class="main-info right">
       <div class="navigasi-pasien">
-        <ul>
+        <ul class="menu-navigasi-utama">
           <li>Anamnesis</li>
           <li>Riw. Alergi</li>
           <li>Status Nyeri</li>
@@ -142,17 +142,40 @@ export default {
   display: flex;
   flex-direction: column;
   
-  ul {
-    height: 100%;
+  // ul {
+  //   height: 100%;
+  //   box-sizing: border-box;         /* Opera/IE 8+ */
+  //     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  //     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
 
-    li {
+  //   li {
+  //     list-style-type: none;
+  //     box-sizing: border-box;         /* Opera/IE 8+ */
+  //     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  //     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  //     // width: 130px;
+  //     // height: 50px;
+  //   }
+  // }
+}
+
+.menu-navigasi-utama {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      // overflow: hidden;
+
+   li {
       list-style-type: none;
       box-sizing: border-box;         /* Opera/IE 8+ */
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
       width: 130px;
-      height: 50px;
+      // height: 50px;
     }
-  }
 }
 </style>
