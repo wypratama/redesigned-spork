@@ -1,24 +1,14 @@
 # redesigned-spork
+## How to Setup
+* You need to have Node installed in your pc 
 
-## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## How to run this project locally
+
 ```
 npm run serve
+open http://localhost:8080/ in your browser
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
