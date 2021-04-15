@@ -55,10 +55,10 @@
             <span>Anamnesis oleh: dr. Sukma Ayu</span>
           </div>
         </div>
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
+        <textarea name="" id="keluhan-utama" placeholder="KELUHAN UTAMA:" cols="8"></textarea>
+        <textarea name="" id="riwayat-penyakit-dahulu" placeholder="RIWAYAT PENYAKIT DAHULU:" ></textarea>
+        <textarea name="" id="riwayat-penyakit-sekarang" placeholder="RIWAYAT PENYAKIT SEKARANG:" ></textarea>
+        <textarea name="" id="riwayat-penyakit-keluarga" placeholder="RIWAYAT PENYAKIT KELUARGA:" ></textarea>
       </div>
     </div>
   </div>
@@ -183,6 +183,7 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
+  justify-content: space-around;
   color: black;
   flex-grow: 1;
   margin: 8px;
@@ -191,9 +192,16 @@ export default {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   padding: 5px 40px;
+  gap: 5px;
 
   h2 {
     font-size: 18px;
+  }
+
+  textarea {
+    flex-grow: 1;
+    border-radius: 6px;
+    padding: 5px;
   }
 }
 
@@ -201,6 +209,7 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  // margin-bottom: 5px;
 
   div {
     display: flex;
@@ -238,5 +247,10 @@ export default {
       text-align: end;
     }
   }
+}
+
+#keluhan-utama {
+  // height: 50px;
+  // display: l;
 }
 </style>
