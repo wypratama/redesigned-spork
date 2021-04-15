@@ -43,7 +43,7 @@
           <li>Riw. obat</li>
         </ul>
       </div>
-      <div>
+      <div class="informasi-umum">
         <h2>PENGKAJIAN AWAL PASIEN RAWAT INAP</h2>
         <div class="informasi-pasien">
           <div>
@@ -141,22 +141,8 @@ export default {
   background-color: black;
   display: flex;
   flex-direction: column;
-  
-  // ul {
-  //   height: 100%;
-  //   box-sizing: border-box;         /* Opera/IE 8+ */
-  //     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  //     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-
-  //   li {
-  //     list-style-type: none;
-  //     box-sizing: border-box;         /* Opera/IE 8+ */
-  //     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  //     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  //     // width: 130px;
-  //     // height: 50px;
-  //   }
-  // }
+  margin: 8px;
+  border-radius: 6px;
 }
 
 .menu-navigasi-utama {
@@ -169,7 +155,6 @@ export default {
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   gap: 6px;
   padding: 10px;
-      // overflow: hidden;
 
    li {
       list-style-type: none;
@@ -192,5 +177,66 @@ export default {
         color: navy;
       }
     }
+}
+
+.informasi-umum {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: black;
+  flex-grow: 1;
+  margin: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  padding: 5px 40px;
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.informasi-pasien {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    &:first-of-type {
+      text-align: left;
+      
+      span {
+        margin-left: 10px;
+        padding-left: 5px;
+        position: relative;
+
+        &::before {
+          content: '';
+          height: 5px;
+          width: 5px;
+          background-color: whitesmoke;
+          border: 2px solid black;
+          border-radius: 50%;
+          position: absolute;
+          left: -10px;
+          top: 3px;
+        }
+
+        &:last-of-type {
+           &::before {
+            background-color: green;
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      text-align: end;
+    }
+  }
 }
 </style>
