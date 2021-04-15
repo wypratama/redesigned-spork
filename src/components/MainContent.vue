@@ -167,6 +167,8 @@ export default {
   box-sizing: border-box;         /* Opera/IE 8+ */
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  gap: 6px;
+  padding: 10px;
       // overflow: hidden;
 
    li {
@@ -175,7 +177,20 @@ export default {
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
       width: 130px;
-      // height: 50px;
+      background-color: whitesmoke;
+      color: gray;
+      font-size: 18px;
+      font-weight: 800;
+      flex-grow: 1;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:first-of-type {
+        background-color: yellow;
+        color: navy;
+      }
     }
 }
 </style>
